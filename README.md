@@ -1,39 +1,24 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+## make sure we are using python
 
-Welcome x737,
+1. $ which python : tell which directory python is installed in
+2. $ ls /home/gitpod/.pyenv/shims/ | grep python : filter the word "python" in our results, so that only the file names that
+have "python" in it will be displayed to screen
+3. $ python : open the current python interpreter
+4. $ python3 : open python3
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## executing python code 
 
-## Gitpod Reminders
+1. $ python3 xxx.py : execute xxx.py file in terminal window
+2. $ python3 : open python3 and write code to execute in interpreter
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## pip3
 
-`python3 -m http.server`
+1. python libraries are installed in Python Package Index, or Pypi
+2. pip3 is the tool to get libraries from Pypi
+3. python standard library contains modules like operation system, math, text, file handling, etc.
+4. $ pip3 install flask : speak to the Python package index and install Flask
+5. $ pip3 freeze : tell us all of the packages that we've installed
+6. $ pip3 freeze --local > requirements.txt : redirect all libraries to the .txt file
+7. $ pip3 uninstall flask : uninstall flask
+8. $ pip3 install -r requirements.txt : tells pip to install from the requirements.txt
 
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
